@@ -13,8 +13,24 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    {{ __('You are logged in!') }}
+                    <ul class="nav justify-content-center">
+                        
+                        <li class="nav-item">
+                            
+                            <a class="nav-link" href="/post/create">Create Post</a>
+                          </li>
+                        <li class="nav-item">
+                          <a class="nav-link posts" aria-current="page" href="/posts">Posts</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled">Disabled</a>
+                        </li>
+                      </ul>
+                   
                 </div>
             </div>
         </div>
