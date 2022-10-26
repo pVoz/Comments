@@ -1,10 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
+              
                 <div class="card-header">{{ __('Dashboard') }}</div>
 
                 <div class="card-body">
@@ -17,17 +19,18 @@
                         
                         <li class="nav-item">
                             
-                            <a class="nav-link" href="/post/create">Create Post</a>
+                            <a class="nav-link" href="/post/create">Create   <i class="fa fa-file"></i></a>
                           </li>
+                          
                         <li class="nav-item">
-                          <a class="nav-link posts" aria-current="page" href="/posts">Posts</a>
+                          <a class="nav-link posts"class="fas fa-band-aid"  aria-current="page" href="/posts">Posts</a>
                         </li>
                         
                         <li class="nav-item">
                           <a class="nav-link" href="#">Link</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link disabled">Disabled</a>
+                          <a class="nav-link ">Disabled</a><i class="fa-solid fa-trash-can-xmark"></i>
                         </li>
                       </ul>
                    
