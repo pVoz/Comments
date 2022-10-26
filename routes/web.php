@@ -25,6 +25,7 @@ Route::get('/post/create', 'App\Http\Controllers\PostController@create')->name('
 Route::get('/posts', 'App\Http\Controllers\PostController@index')->name('posts');
 Route::get('/post/show/{id}', 'App\Http\Controllers\PostController@show')->name('post.show');
 
+
 Route::post('/comment/store', 'App\Http\Controllers\CommentController@store')->name('comment.add');
 Route::post('/reply/store', 'App\Http\Controllers\CommentController@replyStore')->name('reply.add');
 Auth::routes();
