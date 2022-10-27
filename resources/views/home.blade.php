@@ -23,7 +23,7 @@
                           </li>
                           
                         <li class="nav-item">
-                          <a class="nav-link posts"class="fas fa-band-aid"  aria-current="page" href="/posts">Posts</a>
+                          <a class="nav-link posts"class="fas fa-band-aid"  aria-current="page" href="/posts">Posts<i class=&#10148;></i></a>
                         </li>
                         
                         <li class="nav-item">

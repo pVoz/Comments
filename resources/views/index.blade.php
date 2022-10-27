@@ -9,12 +9,14 @@
                     <th>ID</th>
                     <th>Title</th>
                     <th>Action</th>
+                    <th>Number of posts</th>
                 </thead>
                 <tbody>
                 @foreach($posts as $post)
                 <tr>
                     <td>{{ $post->id }}</td>
                     <td>{{ $post->title }}</td>
+                    <td>{{ $post, $quantity->post }}</td>
                     <td>
                         <a href="{{ route('post.show', $post->id) }}" class="btn btn-primary">Show Post</a>
                     </td>
