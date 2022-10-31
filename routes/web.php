@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 /*
@@ -24,6 +24,8 @@ Route::get('/post/create', 'App\Http\Controllers\PostController@create')->name('
 
 Route::get('/posts', 'App\Http\Controllers\PostController@index')->name('posts');
 Route::get('/post/show/{id}', 'App\Http\Controllers\PostController@show')->name('post.show');
+Route::resource('users', UserController::class, ['except' => ['create', 'edit']]);
+
 
 
 Route::post('/comment/store', 'App\Http\Controllers\CommentController@store')->name('comment.add');

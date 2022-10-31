@@ -16,7 +16,9 @@
                 <tr>
                     <td>{{ $post->id }}</td>
                     <td>{{ $post->title }}</td>
-                    <td>{{ $post, $quantity->post }}</td>
+                    {{-- <td>{{ $meny->post }}</td> --}}
+
+
                     <td>
                         <a href="{{ route('post.show', $post->id) }}" class="btn btn-primary">Show Post</a>
                     </td>
