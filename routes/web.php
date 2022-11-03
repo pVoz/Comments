@@ -31,3 +31,6 @@ Route::resource('users', UserController::class, ['except' => ['create', 'edit']]
 Route::post('/comment/store', 'App\Http\Controllers\CommentController@store')->name('comment.add');
 Route::post('/reply/store', 'App\Http\Controllers\CommentController@replyStore')->name('reply.add');
 Auth::routes();
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
