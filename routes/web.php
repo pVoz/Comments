@@ -25,6 +25,7 @@ Route::get('/post/create', 'App\Http\Controllers\PostController@create')->name('
 Route::get('/posts', 'App\Http\Controllers\PostController@index')->name('posts');
 Route::get('/post/show/{id}', 'App\Http\Controllers\PostController@show')->name('post.show');
 Route::resource('users', UserController::class, ['except' => ['create', 'edit']]);
+// Route::get('/show/{id}', 'CommentController@show');
 
 
 

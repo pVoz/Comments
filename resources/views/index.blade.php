@@ -1,6 +1,6 @@
 @extends('layouts.app')
-
 @section('content')
+{{-- {{ require 'src/comment.php'; }} --}}
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -9,18 +9,20 @@
                     <th>ID</th>
                     <th>Title</th>
                     <th>Action</th>
-                    <th>Number of posts</th>
+                    <th>Number of comments</th>
                 </thead>
                 <tbody>
-                @foreach($posts as $post)
-                <tr>
-                    <td>{{ $post->id }}</td>
-                    <td>{{ $post->title }}</td>
-                    {{-- <td>{{ $meny->post }}</td> --}}
-
-
-                    <td>
-                        <a href="{{ route('post.show', $post->id) }}" class="btn btn-primary">Show Post</a>
+                   
+                    @foreach($posts as $post)
+                    <tr>
+                        <td>{{ $post->id }}</td>
+                        <td>{{ $post->title }}</td>
+                        
+                        <td>
+                            <a href="{{ route('post.show', $post->id) }}" class="btn btn-primary">Show Post</a>
+                            <td> {{ $kunda  }} </td>
+                            {{-- {{ dd($monitor) }} --}}
+                        
                     </td>
                 </tr>
                 @endforeach
